@@ -1,0 +1,427 @@
+body{
+    overflow-y: auto;
+    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #000000;
+    border-bottom: 3px solid #202020;
+    margin: 0;
+    gap: 5rem;
+}
+
+.models{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: #000000;
+    border-bottom: 2px solid #202020;
+    margin: 0;
+    gap: 5rem;
+}
+
+@font-face {
+    font-family: 'Haval';
+    src: url('../fonts/Haval-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.left{
+    display: flex;
+    gap: 1rem;
+}
+
+.left button{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Haval', sans-serif;
+    transition: ease 0.3s;
+}
+
+.left button:hover{
+    font-size: 18px;
+}
+
+.right{
+    display: flex;
+    gap: 1rem;
+}
+
+.right button{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Haval', sans-serif;
+    transition: ease 0.3s;
+}
+
+.right button:hover{
+    font-size: 16px;
+}
+
+.Main{
+    display: flex;
+}
+
+.BlackFriday{
+    display: grid;
+    text-wrap: wrap;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    width: 70rem;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-mask-image: radial-gradient(ellipse, black 0%, transparent 90%);
+    mask-image: radial-gradient(ellipse, black 0%, transparent 90%);
+    left: 25rem;
+    top: 12rem;
+    gap: 0;
+}
+
+.BlackFriday p{
+    color: #ffffff;
+    margin: 0;
+    z-index: 100;
+}
+
+.text{
+    z-index: 1000;
+}
+
+.BtnBF{
+    position: absolute;
+    left: 50rem;
+    top: 23rem;
+    width: 20rem;
+    height:3rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Haval', sans-serif;
+    font-size: 16px;
+    background-color: #00CABF;
+    color: #ffffff;
+    transition: ease 0.5s;
+}
+
+.BtnBF:hover{
+    font-size: 18px;
+}
+
+.backg{
+    width: 100%;
+}
+
+.Timer{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    background-color: #F3F3F3;
+    gap: 5rem;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Haval', sans-serif;
+}
+
+.timer-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background:
+        conic-gradient(
+            #00CABF var(--percent),
+            #DCDCDC 0
+        );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle::before{
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #F3F3F3;
+}
+
+.circle-content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.number{
+    font-size: 42px;
+    color: #000000;
+    line-height: 1;
+}
+
+.label{
+    font-size: 20px;
+    color: #444444;
+    margin-top: 0.2rem;
+}
+
+.separator{
+    font-size: 42px;
+    color: #000000;
+}
+
+.Btn{
+    width: 25rem;
+    height:3rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Haval', sans-serif;
+    font-size: 16px;
+    background-color: #00CABF;
+    color: #ffffff;
+    transition: ease 0.5s;
+}
+
+.Btn:hover{
+    font-size: 18px;
+}
+
+.Menu{
+    margin: 0;
+    display: flex;
+    height: 60rem;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.FirstPic{
+    position: absolute;
+    left: 43rem;
+    top: 68.5rem;
+}
+
+.SecondPic{
+    position: absolute;
+    left: 85rem;
+    top: 68.5rem;
+}
+
+.Card{
+    display: flex;
+    background-color: #F3F3F3;
+    width: 40rem;
+    height: 55rem;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.Picture{
+    background-image: url(image/Maskgroup.png);
+    border: 1px solid #949393;
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.Picture > div {
+    position: relative;
+}
+
+.BtnCar{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.BtnCard{
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background: transparent;
+    z-index: 10;
+}
+
+.BtnCard img {
+    display: block;
+}
+
+.Colors{
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.blcol{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.blcol:hover{
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px 1px #000000;
+}
+
+.whcol{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #E7E7E7;
+    border: none;
+    cursor: pointer;
+}
+
+.whcol:hover{
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px 1px #000000;
+}
+
+.grcol{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #ADADAD;
+    border: none;
+    cursor: pointer;
+}
+
+.grcol:hover{
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px 1px #000000;
+}
+
+.redcol{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #A13A21;
+    border: none;
+    cursor: pointer;
+}
+
+.redcol:hover{
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px 1px #000000;
+}
+
+.Info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: 30rem;
+    height: auto;
+}
+
+.Info button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 0.5rem;
+    font-family: 'Haval', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    transition: all 0.3s ease;
+    width: 13rem;
+}
+
+.Info button:nth-child(4),
+.Info button:nth-child(5) {
+    justify-self: start;
+}
+
+.Info button:hover {
+    color: #00CABF;
+}
+
+.Info button img {
+    transition: all 0.3s ease;
+}
+
+.Info button:hover img {
+    filter: invert(100%) sepia(100%) saturate(3000%) hue-rotate(137deg) brightness(97%) contrast(150%);
+}
+
+.BuyCont{
+    display:flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.BuyCont button{
+    width: 30rem;
+    height: 4rem;
+    font-family: 'Haval', sans-serif;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.BuyCont button:nth-child(1){
+    background-color: #00CABF;
+    border: none;
+    color: #ffffff;
+}
+.BuyCont button:nth-child(2){
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+}
+.BuyCont button:nth-child(3) {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.BuyCont button:hover{
+    font-size: 18px;
+}
